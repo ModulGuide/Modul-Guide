@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/umrandung"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/criterionName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/criterionStatus"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Kriteriumsname"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/criterionStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/blue_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/criterionNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:text="Hinweis: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/criterionNoteValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:text="-"
+                />
+            
+		</LinearLayout>
+            
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+        
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/umrandung"
+            android:orientation="vertical" >
+            
+            
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:text="Empfohlen für Semester:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/criterionAlternative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="-" />
+            
+            <TextView
+                android:id="@+id/criterionSemester"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:text="Erfüllt in Semester: "
+                android:textStyle="bold" />
+            
+                <TextView
+                android:id="@+id/criterionSemesterValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="1dp"
+                android:text="Noch nicht erfüllt" />
+                
+                <TextView
+                android:id="@+id/criterionCP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:text="CP: "
+                android:textStyle="bold" />
+                
+                <TextView
+                android:id="@+id/criterionCPValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="1dp"
+                android:text="0" />
+                
+                <TextView
+                android:id="@+id/criterionGrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:text="Note: "
+                android:textStyle="bold" />
+                
+                <TextView
+                android:id="@+id/criterionGradeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="1dp"
+                android:text="unbenotet" />
+                
+                <TextView
+                android:id="@+id/criterionWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:text="Gewichtung: "
+                android:textStyle="bold" />
+                
+                <TextView
+                android:id="@+id/criterionWeightValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="1dp"
+                android:text="-" />
+                
+                <TextView
+                android:id="@+id/criterionRequirements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:text="Anforderungen:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/criterionRequirementsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="-" />
+                    
+        </LinearLayout>
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+</ScrollView>

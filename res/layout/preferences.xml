@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:defaultValue="1"
+        android:inputType="number"
+        android:key="editTextPref"
+        android:name="semesterCount"
+        android:summary="Anzahl an bisherigen Fachsemestern"
+        android:title="Fachsemester" />
+
+    <Preference
+        android:key="loadAndSaveExaminationRegulation"
+        android:summary="Die ausgewählte Prüfungsordnung wird gespeichert"
+        android:title="Prüfungsordnung auswählen" />
+
+         <Preference
+        android:key="exampleCourseScheme"
+        android:summary="Einen Musterstudeinplan für sein Studium aussuchen"
+        android:title="Musterstudienplan auswählen" />
+
+
+    
+         <PreferenceCategory android:title="Fortschritt" >
+
+        <Preference
+            android:visibility="gone"
+            android:key="resetDatabase"
+            android:summary="Die App wird auf den Initalzustand zurückversetzt."
+            android:title="Fortschritt zurücksetzen" />
+    </PreferenceCategory>
+    
+
+    <PreferenceCategory android:title="Vorlesungsverzeichnis" >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="university_calendar_favourite"
+            android:summary="Wenn gesetzt, wird direkt der ausgewählte Favorit geöffnet"
+            android:title="Direkt Favoriten öffnen" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Info" >
+
+        <Preference
+            android:enabled="false"
+            android:summary="1.0.0"
+            android:title="App-Version" />
+
+        <Preference
+            android:key="about"
+            android:summary="App Informationen"
+            android:title="Über" />
+
+        <Preference
+            android:key="faq"
+            android:summary="Häufig gestellte Fragen"
+            android:title="FAQ" />
+        
+        
+        <Preference
+            android:key="versions"
+            android:summary="Änderungshistorie anzeigen"
+            android:title="Änderungshistorie" />
+        
+        
+        
+    </PreferenceCategory>
+    <!--
+    <PreferenceCategory android:title="Daten sichern"
+        android:visibility="gone" >
+
+        <Preference
+            android:key="load"
+            android:summary="Aus Cloud Eisntellung herstellen"
+            android:title="Daten Laden GEHT NOCH NCIHT" />
+
+        <Preference
+            android:key="save"
+            android:summary="In Cloud Einstellungen speichern"
+            android:title="Daten speichern GEHT NOCH NICHT" />
+    </PreferenceCategory>
+    -->
+
+</PreferenceScreen>

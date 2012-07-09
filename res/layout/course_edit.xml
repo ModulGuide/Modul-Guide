@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical" 
+    android:padding="5dp">
+
+    <ScrollView
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/scrollView1"
+        >
+        
+        <LinearLayout
+        	android:id="@+id/linearLayout1"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="top">
+        
+
+        <TextView
+            android:id="@+id/coursePassedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textColor="@android:color/black" 
+            />
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/courseEditCourseText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mathe 1:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/black" 
+                    android:paddingBottom="5dp"/>
+			</TableRow>
+			
+            
+            <TableRow>
+                <Spinner
+                    android:id="@+id/courseEditStatusSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>
+            
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/courseEditChoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wahl:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/black"  />
+			</TableRow>
+            
+            <TableRow>
+                <Spinner
+                    android:id="@+id/courseEditChoiceSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>
+            
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/courseEditSemester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semester:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/black"  />
+			</TableRow>
+            
+            <TableRow>
+                <Spinner
+                    android:id="@+id/courseEditSemesterSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>            
+            
+            <TableRow>
+                <TextView
+                    android:id="@+id/courseEditCP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CP:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/black"  />
+			</TableRow>
+            
+            <TableRow>
+                <EditText
+                    android:id="@+id/courseEditCPTextField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="z.B.: 6.0"
+                    android:inputType="numberDecimal" 
+                    android:textColor="@android:color/black"  />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/courseEditGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Note:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/black"  />
+			</TableRow>
+            
+            <TableRow>
+                <EditText
+                    android:id="@+id/courseEditGradeTextField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="[1.0,4.0]"
+                    android:inputType="numberDecimal" 
+                    android:textColor="@android:color/black"  />
+            </TableRow>
+            
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/courseEditCheckboxGraded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="unbenotet"
+                    android:textColor="@android:color/black"  />
+            </TableRow>
+           
+            <TableRow>
+            <TextView
+                android:id="@+id/courseEditError"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#B22222"
+                android:visibility="invisible"
+                android:text="Ungültige Note: [1.0 - 4.0]" />
+            </TableRow>
+        </TableLayout>
+        
+        </LinearLayout>
+    </ScrollView>
+
+        
+
+</RelativeLayout>

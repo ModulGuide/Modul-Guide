@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    >
+
+   <include layout="@layout/dialog_header"/>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" 
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ViewSwitcher 
+    			android:id="@+id/profileSwitcherSignUp"
+   	 			android:layout_width="fill_parent"
+    			android:layout_height="fill_parent">
+            
+            <TableLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1" >
+
+                <TableRow android:id="@+id/categoryRow" 
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/courseSignedUpOptionalChoosable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wahl:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white" />
+
+                    <Spinner
+                        android:id="@+id/courseSignedUpOptionalChoosableSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+			
+			</TableLayout>
+			
+            <LinearLayout
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:orientation="vertical" >
+			    <TextView
+			         android:id="@+id/courseSignedUpFull"
+			         android:layout_width="wrap_content"
+			         android:layout_height="wrap_content"
+			         android:text="Alle diesem Kurs zugehörigen Wahlpflichten wurden bereits erfüllt"
+			         android:textAppearance="?android:attr/textAppearanceLarge"
+			         android:textColor="@android:color/white" />
+			
+			</LinearLayout>
+            </ViewSwitcher>
+            
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:orientation="horizontal"
+                android:paddingTop="5dp" >
+
+                <Button
+                    android:id="@+id/courseSignedUpOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="OK" />
+
+                <Button
+                    android:id="@+id/courseSignedUpCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Cancel" />
+            </LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>
+
+<!--  
+<LinearLayout
+    android:id="@+id/courseSignedUpSecond"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView
+         android:id="@+id/courseSignedUpFull"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Alle Wahlpflichten wurden bereits erfüllt"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="@android:color/white" />
+
+    <Button
+         android:id="@+id/courseSignedUpOkFull"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:paddingBottom="5dp"
+         android:paddingLeft="5dp"
+         android:paddingTop="5dp"
+         android:text="OK" />
+</LinearLayout>
+-->
+

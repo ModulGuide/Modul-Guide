@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|left"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Kurs bestanden:"
+        android:textAppearance="@style/TextAppearance.Sherlock.DialogWindowTitle" 
+        android:paddingLeft="20dp" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/abs__action_bar_subtitle_bottom_margin"
+        android:layout_marginTop="@dimen/abs__action_bar_subtitle_top_margin"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Informatik"
+        android:textAppearance="@style/TextAppearance.Sherlock.DialogWindowTitle"
+        android:textSize="18sp"
+        android:paddingLeft="20dp"  
+        android:visibility="invisible"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@color/abs__holo_blue_light" />
+
+</LinearLayout>

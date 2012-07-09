@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.astuetz.viewpagertabs.ViewPagerTabs
+        xmlns:app="http://schemas.android.com/apk/res/de.eStudent.modulGuide"
+        android:id="@+id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF3B3B3B" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF91A438"
+        />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+          <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/universityCalendarWarning"
+            android:layout_alignParentTop="true" 
+            />
+
+        <fragment
+            android:id="@+id/universityCalendarWarning"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:name="de.eStudent.modulGuide.UniversityCalendarWarningFragment"
+            android:tag="warningFragment" />
+
+        <!-- <include -->
+        <!-- android:id="@+id/universityCalendarWarning" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentBottom="true" -->
+        <!-- layout="@layout/university_calendar_warning" /> -->
+    </RelativeLayout>
+
+</LinearLayout> <!-- <com.astuetz.viewpagertabs.ViewPagerTabs -->
+
+<!-- app:backgroundColorPressed="#55333E73" -->
+<!-- app:textColor="#D8D8D8" -->
+<!-- app:textColorCenter="#FFFC7F" -->
+<!-- app:lineColorCenter="#FFFC7F" -->
+<!-- app:lineHeight="4dip" -->
+<!-- app:tabPaddingLeft="15dip" -->
+<!-- app:tabPaddingRight="15dip" -->
+<!-- app:tabPaddingBottom="2dip" -->
+<!-- app:tabPaddingTop="5dip" -->
+<!-- app:textSize="12sp" /> -->

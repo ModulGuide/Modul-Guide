@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/reset_search_bar" />
+
+    
+  
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/createCustomCourseButton"
+        android:fastScrollEnabled="true" >
+    </ListView>
+
+
+
+        <TextView
+            
+            android:id="@+id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Kursvorschläge werden geladen ..."
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+</LinearLayout>

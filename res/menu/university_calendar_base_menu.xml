@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/universityCalendarSubjects"
+        android:icon="@drawable/university_calendar"
+        android:showAsAction="always|withText"
+        android:title="Fächerliste"/>
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/gd_action_bar_search"
+        android:showAsAction="always|withText"
+        android:title="Suche"/>
+    
+   <!--  <item
+        android:id="@+id/allCourses"
+        android:showAsAction="ifRoom|withText"
+        android:title="komplette Kursliste"/> -->
+
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/gd_action_bar_refresh"
+        android:showAsAction="ifRoom|withText"
+        android:title="aktualisieren"/>
+
+    <item
+        android:id="@+id/preferences"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="Einstellungen"/>
+
+</menu>

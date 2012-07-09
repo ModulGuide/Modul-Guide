@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="custom_theme_color">#8F8F8F</color>
+
+    <style name="CustomTheme" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/my_background</item>
+        <item name="android:textColorPrimary">#F7F7F7</item>
+    </style>
+
+    <style name="Theme.Styled" parent="Theme.Sherlock.Light.DarkActionBar.ForceOverflow">
+        <item name="android:textColorPrimary">#F7F7F7</item>
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:windowBackground">@drawable/my_background</item>
+    </style>
+
+    <style name="Widget.Styled.ActionBar" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/bg_striped_img</item>
+        <item name="android:background">@drawable/bg_striped_img</item>
+    </style>
+
+    <style name="GreyTheme.No.Title" parent="Theme.Sherlock.Light.DarkActionBar.ForceOverflow">
+        <item name="android:windowBackground">@color/custom_theme_color</item>
+        <item name="android:textColorPrimary">#F7F7F7</item>
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar</item>
+    </style>
+
+    <style name="Dialog.No.Title" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/abs__dialog_full_holo_dark</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

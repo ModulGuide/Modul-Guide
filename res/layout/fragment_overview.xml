@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewSwitcher"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/overviewFragmentLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/umrandung" >
+
+                <TextView
+                    android:id="@+id/overviewCourseOfStudy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/overviewButton"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:text="Studienfach noch nicht gewählt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/overviewCourseOfStudySemester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/overviewCourseOfStudy"
+                    android:layout_toLeftOf="@+id/overviewButton"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:text="1. Semester"
+                    android:textStyle="bold" 
+                    
+                    />
+
+                <ImageButton
+                    android:id="@+id/overviewButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/chart_icon" 
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/umrandung"
+                android:orientation="vertical"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/overviewCourseOfStudyProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:text="Fortschritt: (5 +5%)"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/overviewProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:progressDrawable="@drawable/cp_progress_drawable" />
+
+                <TextView
+                    android:id="@+id/overviewCourseOfStudyCP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:text="0 +6/180 CP " />
+
+                <TextView
+                    android:id="@+id/studyComplete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:text="Studium wurde erfolgreich beendet."
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/umrandung"
+                android:orientation="vertical"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/overviewCourseOfStudyGraduation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:text="Vorausichtlicher Abschluss:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/overviewCourseOfStudyGraduationDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="1dp"
+                    android:text="Noch nicht berechenbar" />
+
+                <TextView
+                    android:id="@+id/overviewCourseOfStudy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:text="Note:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/overviewCourseOfStudyGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="1dp"
+                    android:text="-" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/missing_examination_regulation" />
+
+</ViewSwitcher>

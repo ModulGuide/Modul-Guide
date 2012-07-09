@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/universityCalendarCourseOverviewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+     />
+
+</LinearLayout>
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/umrandung"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/universityCalendarCourseOverviewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/universityCalendarCourseOverviewStatus"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="6dp"
+                    android:text="Kursname"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/universityCalendarCourseOverviewStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/blue_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewVak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="5dp"
+                android:text="VAK" />
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:text="Hinweis: "
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewNoteValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="1dp"
+                android:text="-"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewProf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:text="Dozent: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewProfValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="1dp"
+                android:text="-" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/umrandung"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+                        <TextView
+                android:id="@+id/universityCalendarCourseOverviewDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:text="Dauer:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewDurationValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="1dp"
+                android:text="-" />
+            
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:text="Zeit:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewTimeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="1dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:text="Beschreibung:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewDescriptionValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="1dp"
+                android:text="-" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/umrandung"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewCP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:text="CP:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewCPValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="unbekannt" />
+            
+            
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:text="Empfohlen für Semester:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewAlternative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="-" />
+            
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewSemester"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:text="Belegt in Semester:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewSemesterValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Noch nicht belegt" />
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewGrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:text="Note:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewGradeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="-" />
+            
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:text="Gewichtung: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewWeightValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="-" />
+            
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewRequirements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:text="Anforderungen:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/universityCalendarCourseOverviewRequirementsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="-" />
+        </LinearLayout>
+  
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+    
+    <TableRow>
+
+    	<TextView
+        	android:id="@+id/addCourseNameText"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/add_course_name"
+        	android:textAppearance="?android:attr/textAppearanceLarge"
+        	android:textColor="@android:color/white" />
+
+    	<EditText
+        	android:id="@+id/addCourseNameTextfield"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	 >
+
+        	<requestFocus />
+    	</EditText>
+    	
+    </TableRow>
+	
+	<TableRow>
+    	
+        <TextView
+            android:id="@+id/addCourseVAKText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_course_vak"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+        
+        <EditText
+            android:id="@+id/addCourseVAKTextfield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </TableRow>
+        
+	<TableRow>
+        
+        <TextView
+            android:id="@+id/addCourseCPText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_course_cp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+            
+        <EditText
+            android:id="@+id/addCourseCPTextfield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        
+	</TableRow>
+        
+	<TableRow>
+    
+        <TextView
+            android:id="@+id/addCourseGradeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_course_grade"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+        
+    	<Spinner
+    	    android:id="@+id/addCourseGradeSpinner"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1" />
+        
+	</TableRow>
+	 
+	<TableRow>
+	    
+    	<CheckBox
+    		android:id="@+id/addCoursePassedCheckbox"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/add_course_passed"
+       		android:textColor="@android:color/white" />
+	</TableRow>
+        
+
+</TableLayout>

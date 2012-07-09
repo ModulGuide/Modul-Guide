@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/universityCalendar"
+        android:icon="@drawable/university_calendar"
+        android:showAsAction="always|withText"
+        android:title="Veranstaltungsliste"/>
+
+    <item
+        android:id="@+id/preferences"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="Einstellungen"/>
+
+    <item
+        android:id="@+id/help"
+        android:title="Hilfe"/>
+
+    <item
+        android:id="@+id/feedback"
+        android:title="Feedback geben"/>
+
+</menu>
