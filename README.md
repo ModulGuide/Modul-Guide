@@ -30,3 +30,10 @@ Zu jeder Prüfungsordnung können Musterstudienpläne hochgeladen und benutzt werde
 
 ### Erweiterbarkeit
 Prüfungsordnungen können jederzeit hochgeladen werden und stehen sofort zur Benutzung zur Verfügung.  
+
+
+## Benutzte Biblotheken
+* GraphView
+* GreenDroid 
+* ActionBarSherlock 
+* ViewPagerTabs 
