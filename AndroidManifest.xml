@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.eStudent.modulGuide"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--
+             android:restoreAnyVersion="true"
+        android:allowBackup="true"
+        android:backupAgent="de.eStudent.modulGuide.backup.MyBackupAgent"
+    -->
+
+    <supports-screens
+        android:largeScreens="false"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="false" />
+    
+    
+     <compatible-screens>
+        <screen android:screenSize="small" android:screenDensity="ldpi" />
+        <screen android:screenSize="small" android:screenDensity="mdpi" />
+        <screen android:screenSize="small" android:screenDensity="hdpi" />
+        <screen android:screenSize="small" android:screenDensity="xhdpi" />
+        <!-- all normal size screens -->
+        <screen android:screenSize="normal" android:screenDensity="ldpi" />
+        <screen android:screenSize="normal" android:screenDensity="mdpi" />
+        <screen android:screenSize="normal" android:screenDensity="hdpi" />
+        <screen android:screenSize="normal" android:screenDensity="xhdpi" />
+    </compatible-screens>
+    
+    
+
+    <application
+        android:configChanges="orientation|keyboardHidden"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <provider
+            android:name="de.eStudent.modulGuide.database.ModulguideContentProvider"
+            android:authorities="de.eStudent.modulGuide.database.ModulguideContentProvider" />
+
+        <activity
+            android:name="de.eStudent.modulGuide.StudiumhelferActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Styled" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".preferences.Preferences"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Einstellungen"
+            android:theme="@style/Theme.Styled" >
+        </activity>
+        <activity
+            android:name="de.eStudent.modulGuide.StudyCoursePlanTable"
+                       android:screenOrientation="landscape"  
+            
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <activity
+            android:name="de.eStudent.modulGuide.universityCalendar.UniversityCalendarBaseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:theme="@style/GreyTheme.No.Title" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" >
+            </meta-data>
+        </activity>
+        <activity
+            android:name=".Details"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Details"
+            android:theme="@style/Theme.Styled" >
+        </activity>
+        <activity
+            android:name="PassedCourseDialog"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Dialog.No.Title" >
+        </activity>
+        <activity
+            android:name="CourseSignUp"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Dialog.No.Title" >
+        </activity>
+        <activity
+            android:name=".preferences.ExaminationRegulationList"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Prüfungsordnungen"
+            android:launchMode="singleTop"
+            android:theme="@style/GreyTheme.No.Title" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/examination_regulation_list_searchable" >
+            </meta-data>
+        </activity>
+        <activity
+            android:name="Charts"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Dialog.No.Title" >
+        </activity>
+
+        <!--
+             <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAI0MARp_-cGfyQzdVNOCWNZvhuEfin6iZGzAujpQ" />
+        -->
+        <activity
+            android:name="CourseChoiceDialog"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Kurs auswählen"
+            android:launchMode="singleTop"
+            android:theme="@style/GreyTheme.No.Title" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/course_choice_dialog_search" >
+            </meta-data>
+        </activity>
+        <activity
+            android:name=".universityCalendar.UniversityCalendarSubjects"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Vorlesungsverzeichnis"
+            android:launchMode="singleTop"
+            android:theme="@style/GreyTheme.No.Title" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/university_calendar_subjects_search" >
+            </meta-data>
+        </activity>
+        <activity
+            android:name="de.eStudent.modulGuide.CourseEdit"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Kurs bearbeiten"
+            android:theme="@style/Theme.Styled"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".preferences.ExampleCourseSchemeList"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/GreyTheme.No.Title" >
+        </activity>
+        <activity
+            android:name="CreateCustomCourseDialog"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Dialog.No.Title" >
+        </activity>
+        <activity
+            android:name=".preferences.About"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Über Modul-Guide"
+            android:theme="@style/Theme.Styled" >
+        </activity>
+        <activity
+            android:name=".preferences.License"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Lizenzen"
+            android:theme="@style/Theme.Styled" >
+        </activity>
+    </application>
+
+</manifest>
